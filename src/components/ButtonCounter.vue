@@ -5,7 +5,6 @@
     count.value = props.count ? props.count : 0
     console.log(props.count)
     const emit = defineEmits(['megnyomtak'])
-
     function klikk () 
     {
         count.value++
@@ -13,12 +12,5 @@
     }
 </script>
 <template>
-
-
 <button @click="klikk"> {{ title }} : {{ count }}</button>
-
-
 </template>
-<style scoped>
-
-</style>

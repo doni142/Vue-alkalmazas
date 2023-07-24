@@ -23,11 +23,4 @@ function render(){
     const currentDiv = document.getElementById("div1");
     document.body.insertBefore(newDiv, currentDiv);
 }
-
 </script>
-
-<template>
-
-
-</template>
-<style scoped></style>ą
