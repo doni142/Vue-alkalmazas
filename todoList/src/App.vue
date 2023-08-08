@@ -16,15 +16,18 @@ function add (){
   todos.value.push( {title: todo.value})
   todo.value = ''
 }
+
 function del (todo){
   console.log(todo)
   todos.value = todos.value.filter(actual => actual.title != todo.title)
 }
+
 function update (actualtodo) {
   todo.value = todos.value[actualtodo].title
   state.value = 'save'
   editedTodo = actualtodo
 }
+
 function save (){
   console.log(editedTodo, todos.value[editedTodo])
   todos.value[editedTodo].title = todo.value
